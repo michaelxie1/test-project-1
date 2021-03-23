@@ -37,9 +37,7 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app!
 
 ## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-![](This PC/Desktop/codePathFunctions.gif)
+<img src = "http://g.recordit.co/hKwc1O0KOq.gif" width=250><br>
 
 
 ## Reflection Questions
