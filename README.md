@@ -37,9 +37,9 @@ The following **additional** features are implemented:
 - [ ] List anything else that you can get done to improve the app!
 
 ## Video Walkthrough
-User Winning:
+User Winning:<br>
 <img src = "http://g.recordit.co/hKwc1O0KOq.gif" width=250><br>
-User Losing
+User Losing: <br>
 <img src = "http://g.recordit.co/sxsN7z9cIK.gif" width=250><br>
 
 
