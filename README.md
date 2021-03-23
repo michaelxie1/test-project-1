@@ -4,7 +4,7 @@
 
 Submitted by: **Michael Xie**
 
-Time spent: **5** hours spent in total
+Time spent: **4** hours spent in total
 
 Link to project: https://glitch.com/edit/#!/noon-fluff-appalachiosaurus
 
@@ -49,13 +49,13 @@ For some of the syntax regarding both CSS and JavaScript I referred to websites 
 I came across some issues regarding my console.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
-[YOUR ANSWER HERE]
+One of the challenges that I faced within this project would be understanding some of the JavaScript code within the file. 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
-[YOUR ANSWER HERE]
+With web developments, I feel that I understand most of the basic concepts and how this website overall works. I am still a bit confused regarding the javascript element of the website. I understand the concepts of functions and conditional statements, but I was still confused about the method calls and what elements were associated with each of their corresponding HTML elements.
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
-To improve this project, I would want to implement a case to which the game ends automatically if the user begins to press the buttons before the pattern is finished being outputted by the code. Within this version of the project, the user was able to essentially cut off the pattern entirely if they did not 
+To improve this project, I would want to implement a case to which the game ends automatically if the user begins to press the buttons before the pattern is finished being outputted by the code. Within this version of the project, the user was still able to begin their pattern even if the pattern was currently being displayed. Furthermore, the pattern was the same pattern in each simulation of the project. I would want to randomize the patterns to be different each time as there would be no point in playing the game once the user familiarizes themselves with the pattern. The last element that I wanted to incorporate would be changing the button to display "replay/retry" after the user either fails or wins their game. The website does not explicitly factor in whether or not it's the users first attempt to playing them game.
 
 
 ## License
