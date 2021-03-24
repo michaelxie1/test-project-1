@@ -5,23 +5,24 @@
 //console.log("hi");
 //creation of global variables
 // global constants
-const clueHoldTime = 1000; //how long to hold each clue's light/sound
+
 const cluePauseTime = 333; //how long to pause in between clues
 const nextClueWaitTime = 1000; //how long to wait before starting playback of the clue sequence
 
 //Global Variables
-var pattern = [2, 2, 4, 3, 2, 1, 2, 4];
+var pattern = [2, 5, 4, 3, 2, 6, 2, 4];
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;
 var guessCounter = 0;
-
+var clueHoldTime = 1000; //how long to hold each clue's light/sound
 
 function startGame(){
     //initialize game variables
     progress = 0;
     gamePlaying = true;
+    randomizePattern(pattern);
     // swap the Start and Stop buttons
     document.getElementById("startBtn").classList.add("hidden");
     document.getElementById("stopBtn").classList.remove("hidden");
@@ -38,13 +39,20 @@ function stopGame(){
     document.getElementById("stopBtn").classList.add("hidden");
 
 }
+function randomizePattern(array){
+  for(let i = 0; i < array.length; i++){
+    array[i] = Math.floor((Math.random() * 8) + 1);
+  }
+}
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 260,
+  2: 295,
+  3: 330,
+  4: 365,
+  5: 400,
+  6: 440
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
@@ -100,7 +108,8 @@ function playClueSequence(){
   for(let i=0;i<=progress;i++){ // for each clue that is revealed so far
     console.log("play single clue: " + pattern[i] + " in " + delay + "ms")
     setTimeout(playSingleClue,delay,pattern[i]) // set a timeout to play that clue
-    delay += clueHoldTime 
+    delay += clueHoldTime
+    //clueHoldTime -= 10
     delay += cluePauseTime;
   }
 }
@@ -114,7 +123,7 @@ function loseGame(){
 }
 function winGame(){
   stopGame();
-  alert("Game Over. You won!");
+  alert("Congratulations. The game has ended. You won!");
 }
 
 ///Checking User's Guess
